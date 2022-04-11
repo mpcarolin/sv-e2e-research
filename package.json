@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nightwatch": "npx nightwatch nightwatch/nightwatch.test.js",
+    "nightwatch": "npx nightwatch --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.test.js",
     "playwright": "npx playwright test playwright.test.js",
     "cypress": "echo \"not yet implemented\""
   },
