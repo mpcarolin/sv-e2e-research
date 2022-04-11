@@ -13,7 +13,7 @@ describe('Nightwatch Proof of Concept: https://sambabiker.com', () => {
       .end()
   })
 
-  it.only('should work with async/await and chai matchers', async browser => {
+  it('should work with async/await and chai matchers', async browser => {
     await browser.url('https://sambabiker.com/news')
     await browser.useXpath()
     await browser.click(
