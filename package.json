@@ -1,0 +1,19 @@
+{
+  "name": "e2e-testing-research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nightwatch": "npx nightwatch nightwatch/nightwatch.test.js",
+    "playwright": "npx playwright test playwright.test.js",
+    "cypress": "echo \"not yet implemented\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.20.2",
+    "chromedriver": "^100.0.0",
+    "geckodriver": "^3.0.1",
+    "nightwatch": "^2.0.10"
+  }
+}
