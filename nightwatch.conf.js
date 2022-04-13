@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 //
 // Refer to the online docs for more details:
 // https://nightwatchjs.org/gettingstarted/configuration/
@@ -20,7 +18,7 @@ module.exports = {
   src_folders: [],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
-  page_objects_path: [ 'nightwatch/pages/' ],
+  page_objects_path: ['node_modules/nightwatch/examples/pages/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/custom-commands.html
   custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
@@ -39,7 +37,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'https://michael-test.staging.zerista.io',
+      launch_url: 'https://nightwatchjs.org',
 
       screenshots: {
         enabled: false,

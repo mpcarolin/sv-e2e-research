@@ -1,4 +1,6 @@
+storageState.json
 tests_output
+.env
 
 # Logs
 logs

@@ -4,11 +4,20 @@ module.exports = {
     return this.api.launchUrl
   },
   elements: {
-    // shorthand, specifies selector
-    newsButton: {
-      selector: "//a[text()='News']",
+    accountDropdown: {
+      selector: '//*[contains(text(), "Hi, Michael")]',
       locateStrategy: 'xpath'
     },
-
-  }
+    attendeesTab: {
+      selector: '//a[text()="Attendees"]',
+      locateStrategy: 'xpath'
+    }
+  },
+  commands: [{
+    openAttendeePage: function () {
+      return this
+        .waitForElementVisible('body', 1000)
+        .click('@attendeesTab')
+    }
+  }]
 }

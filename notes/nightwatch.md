@@ -13,7 +13,7 @@
   * WebDriver
   * XPath (necessary for selectors by text, for example)
 * Good docs with global search
-* Supports all major web browsers, including safari
+* Supports all web browsers with web-driver support, including safari
 * Integrated support for Cucumber.js feature files and test runners
   * https://github.com/nightwatchjs/nightwatch/tree/main/examples/cucumber-js
 * Its API is a direct mapping to many Selenium APIs
@@ -27,7 +27,6 @@
 * XPath is the only way to get elements in a non-brittle way, so your opinion on Nightwatch will depend a lot on your opinion of XPath and whether or not the developers will write robust tests with it
   * I've seen xpath go wrong when people use it to create very brittle queries dependent on element order or the specific structure of the DOM
   * But if you stick with user-facing features, it's good and powerful, e.g.:
-    * accessibility tree roles: `//*[@aria-role="header"]`
     * user-facing text: `//*[text()="Test"]`
 * Switching between XPath and CSS selectors requires calling functions every time
   * `.useXPath()`
@@ -35,8 +34,8 @@
 * Nightwatch supports async-await, but it was mainly designed to use function chaining
   * I could imagine devs producing callback hell with functions like `.perform` if they aren't careful
   * Output from functions when run with `async` is less useful than chaining
-* A lot of the built-in `Assert` api are brittle
-  * Example: `browser.assert.attributeEquals("body", "data-attr", "some value")`
-  * But you don't have to use these
+* Certain test configuration needs to be repeated per-browser as it is not global
+  * Example: headless requires platform-specific flags for each browser
+* Makes use of the `this` parameter quite a bit, which can be error prone if devs forget to use function over arrow syntax
 
     

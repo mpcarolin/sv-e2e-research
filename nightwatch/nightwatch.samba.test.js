@@ -1,4 +1,4 @@
-describe('Nightwatch Proof of Concept: https://sambabiker.com', () => {
+describe('Nightwatch Proof of Concept: SAMBA', () => {
 
   const delay = async seconds => 
     await new Promise((res) => setTimeout(res, seconds * 1000))

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nightwatch": "npx nightwatch --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.test.js",
-    "playwright": "npx playwright test playwright.test.js",
+    "nightwatch": "yarn nightwatch:zerista",
+    "nightwatch:zerista": "npx nightwatch --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.zerista.test.js",
+    "nightwatch:samba": "npx nightwatch --headless --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.samba.test.js",
+    "playwright": "npx playwright test --config playwright/playwright.config.js playwright/playwright.test.js",
     "cypress": "echo \"not yet implemented\""
   },
   "author": "",
@@ -13,6 +15,7 @@
   "dependencies": {
     "@playwright/test": "^1.20.2",
     "chromedriver": "^100.0.0",
+    "dotenv": "^16.0.0",
     "geckodriver": "^3.0.1",
     "nightwatch": "^2.0.10"
   }
