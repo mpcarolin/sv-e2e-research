@@ -8,13 +8,15 @@
     "nightwatch:zerista": "npx nightwatch --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.zerista.test.js",
     "nightwatch:samba": "npx nightwatch --headless --config nightwatch/nightwatch.conf.js nightwatch/nightwatch.samba.test.js",
     "playwright": "npx playwright test --config playwright/playwright.config.js playwright/playwright.test.js",
-    "cypress": "echo \"not yet implemented\""
+    "cypress": "npx cypress open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.20.2",
+    "@types/cypress": "^1.1.3",
     "chromedriver": "^100.0.0",
+    "cypress": "^9.5.4",
     "dotenv": "^16.0.0",
     "geckodriver": "^3.0.1",
     "nightwatch": "^2.0.10"

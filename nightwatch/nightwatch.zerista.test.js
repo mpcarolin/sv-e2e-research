@@ -3,7 +3,6 @@ describe('Nightwatch Proof of Concept: Zerista', function () {
   // Nightwatch doesn't have a built-in way to preserve auth state between tests,
   // So we need to run through the login procedure each time
   beforeEach(function (browser) {
-    console.log('LOGGING IN')
     const loginPage = browser.page.login() 
     loginPage
       .navigate()

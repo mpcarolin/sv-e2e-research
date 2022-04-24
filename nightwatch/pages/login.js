@@ -14,7 +14,7 @@ module.exports = {
       locateStrategy: 'xpath'
     },
     loginButton: {
-      selector: '//input[@type="submit"]',
+      selector: '//xinput[@type="submit"]',
       locateStrategy: 'xpath'
     },
   },
