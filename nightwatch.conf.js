@@ -28,7 +28,7 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/plugin-api.html
   plugins: [],
-  
+
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
 
